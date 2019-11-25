@@ -4,22 +4,22 @@
     <meta charset="utf-8">
     <!-- links bulma stylesheet -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../static/css/bulma.css">
-    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/bulma.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/main.css">
     <!-- and so the jinja begins -->
     {% if title %}
-		<title>{{ title }}</title>
+    <title>{{ title }}</title>
     {% else %}
     <title>James He</title
     {% endif %}
   </head>
 
-	<body>
+  <body>
     <!-- navbar -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a href="www.jameshe.me" class="navbar-item">
-          <img src="../static/img/jarfieldbrand.png">
+          <img src="../../static/img/jarfieldbrand.png">
         </a>
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
           <span aria-hidden="true"></span>
@@ -40,11 +40,11 @@
 
     <!-- boilerplate jinja and bulma for main -->
     <main role="main" class="container">
-		  {% block content %}{% endblock %}
-		</main>
+      {% block content %}{% endblock %}
+    </main>
   </body>
 
-	<footer class='footer'>
+  <footer class='footer'>
     <div class="content has-text-centered">
       <p>
         <strong>jameshe.me</strong> is developed by me, <a href="http://www.jameshe.me">James He</a>

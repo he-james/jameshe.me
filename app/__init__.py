@@ -1,4 +1,5 @@
-from flask import Flask
-app = Flask(__name__)
+"""Create Flask object application."""
 
+from flask import Flask
 import main
+app = Flask(__name__)
