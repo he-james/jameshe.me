@@ -15,19 +15,30 @@
   </head>
 
 	<body>
-    <section class="hero is-link is-fullheight-with-navbar">
-      <div class="hero-body">
-        <div class="container">
-          <img src="../static/img/kiwi.jpg">
-          <img src="../static/img/killer_doge.jpg">
-          <img src="../static/img/whoppper.png">
-          <p class="title">
-            James He
-          </p>
-          <p> Welcome to my site </p>
+    <!-- navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a href="www.jameshe.me" class="navbar-item">
+          <img src="../static/img/jarfieldbrand.png">
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="mainNavbarMenu" class="navbar-menu">
+        <div class="navbar-start">
+          <!--navbar items still need LINKS!!!-->
+          <a class="navbar-item">Home</a>
+          <a class="navbar-item">Projects</a>
+          <a class="navbar-item">Blog</a>
+          <a class="navbar-item">About</a>
         </div>
       </div>
-    </section>
+    </nav>
+
+    <!-- boilerplate jinja and bulma for main -->
     <main role="main" class="container">
 		  {% block content %}{% endblock %}
 		</main>
