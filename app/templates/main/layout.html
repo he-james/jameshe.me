@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../../static/css/bulma.css">
     <link rel="stylesheet" type="text/css" href="../../static/css/main.css">
-    <!-- and so the jinja begins -->
+
     {% if title %}
     <title>{{ title }}</title>
     {% else %}
@@ -16,11 +16,9 @@
 
   <body>
     <!-- navbar -->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-transparent has-shadow is-spaced" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a href="www.jameshe.me" class="navbar-item">
-          <img src="../../static/img/jarfieldbrand.png">
-        </a>
+        <a class="navbar-item"><strong>James He</strong></a>
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -30,15 +28,17 @@
       <div id="mainNavbarMenu" class="navbar-menu">
         <div class="navbar-start">
           <!--navbar items still need LINKS!!!-->
-          <a class="navbar-item">Home</a>
-          <a class="navbar-item">Projects</a>
+	  <a href={{ url_for('main.home') }} class="navbar-item">Home</a>
+	  <a href={{ url_for('main.projects') }} class="navbar-item">Projects</a>
           <a class="navbar-item">Blog</a>
           <a class="navbar-item">About</a>
+        </div>
+        <div class="navbar-end">
+          <a class="navbar-item">Github</a>
         </div>
       </div>
     </nav>
 
-    <!-- boilerplate jinja and bulma for main -->
     <main role="main" class="container">
       {% block content %}{% endblock %}
     </main>
@@ -49,7 +49,7 @@
       <p>
         <strong>jameshe.me</strong> is developed by me, <a href="http://www.jameshe.me">James He</a>
         <br>
-        View <strong><a href="https://www.github.com/he-james">Github</a></strong>
+        View this website on <strong><a href="https://www.github.com/he-james">Github</a></strong>
       </p>
     </div>
   </footer>

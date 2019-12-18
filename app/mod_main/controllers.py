@@ -13,3 +13,8 @@ def home():
     """Render home page."""
     title = "Home | James He"
     return render_template("main/home.html", title=title)
+
+@mod_main.route('/projects', methods=['GET', 'POST'])
+def projects():
+    title = "Projects | James He"
+    return render_template("main/projects.html", title=title)
