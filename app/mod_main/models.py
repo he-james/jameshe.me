@@ -25,13 +25,18 @@ class Project(Base):
     link = db.Column(db.String(512), nullable=False, unique=True)
     # Link to source code
     src = db.Column(db.String(512), nullable=True, unique=True)
+    # Description
+    desc = db.Column(db.String(2000), nullable=True, unique=True)
 
-    def __init__(proj, name, link, src):
-        """Instantiate new instance."""
-        proj.name = name
-        proj.link = link
-        proj.src = src
-
-    def __repr__(proj):
+    def __repr__(self):
         """Evaluate new instance (success/fail)."""
-        return '<Project %r>' % proj.name
+        return '<Project %r>' % self.name
+
+def __init__(self, name, link, src, desc):
+    """Instantiate new instance."""
+    self.name = name
+    self.link = link
+    self.src = src
+    self.desc = desc
+
+
