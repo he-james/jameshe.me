@@ -5,7 +5,7 @@ Babel==2.8.0
 backports-abc==0.5
 backports.shutil-get-terminal-size==1.0.0
 BeautifulSoup==3.2.2
-bleach==3.1.0
+bleach==3.1.4
 certifi==2019.11.28
 chardet==3.0.4
 Cheetah==2.4.4
