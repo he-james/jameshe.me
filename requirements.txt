@@ -82,7 +82,7 @@ tornado==5.1.1
 traitlets==4.3.3
 trash-cli==0.12.9.14
 typing==3.7.4.1
-urllib3==1.25.8
+urllib3==1.26.5
 virtualenv==15.1.0
 wcwidth==0.1.8
 webencodings==0.5.1
